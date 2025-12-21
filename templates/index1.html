@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Python Online Compiler</title>
+
+  <link rel="stylesheet" href="{% static 'css/styles1.css' %}">
+</head>
+<body>
+
+<header>Python Online Compiler</header>
+
+<div id="main">
+  <!-- Left: Question + Editor -->
+  <div id="left">
+    <div id="editor"></div>
+  </div>
+
+  <!-- Right: Input + Output -->
+  <div id="right">
+    <textarea id="user_input" placeholder="Enter input() values here..."></textarea>
+
+    <button id="run-btn" onclick="runCode()">
+      <span id="run-text">Run</span>
+      <span id="run-spinner" class="spinner" style="display:none;"></span>
+    </button>
+
+    <h3>Output:</h3>
+    <div id="output"></div>
+  </div>
+</div>
+
+<!-- Monaco Editor -->
+<script src="https://unpkg.com/monaco-editor@latest/min/vs/loader.js"></script>
+<script src="{% static 'js/index.js' %}" ></script>
+
+</body>
+</html>
