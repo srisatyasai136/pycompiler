@@ -1,4 +1,4 @@
-name: Keep codex Render App Awake
+name: Keep Render App Awake
 
 on:
   schedule:
